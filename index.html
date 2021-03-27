@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<main class="row">
+    <section class="row_item header">
+        <h1>Регистрация</h1>
+        <div class="refresher">
+
+        </div>
+    </section>
+    <section class="row_item favorites">
+        <div class="favorites-left">
+            <h2>Избранные документы</h2>
+        </div>
+        <form class="favorites-right" id="add_form">
+            <input type="text" placeholder="Добавить новый документ" class="select" id="add_info">
+            <button class="add circle">+</button>
+        </form>
+    </section>
+    <section class="row_item fixed" id="fixed_info">
+        <div class="fixed-left">
+            <h3>Пользователь</h3>
+            <div class="fixed-left-low">
+                <img src="https://banner2.cleanpng.com/20180331/aow/kisspng-computer-icons-user-profile-user-5abf1fd8a08734.8661348115224749686575.jpg" class="img1">
+                <p>№1</p>
+            </div>
+        </div>
+        <div class="fixed-right">
+            <ul class="listed">
+                <li><span>Имя</span><input type="text" placeholder="Имя" class="user" id="firstname"></li>
+                <li><span>Фамилия</span><input type="text" placeholder="Фамилия" id="lastname"></li>
+                <li><span>Отчество(опционально)</span><input type="text" placeholder="Отчество" class="user"></li>
+                <li><span class="user" id="phone">Телефон</span><input type="text"></li>
+                <li><span></span><input type="email" placeholder="Почта"></li>
+            </ul>
+        </div>   
+    </section>
+    <ul class="row_item list">
+        <li>
+            <div class="lihead">
+                <h3>Паспорт</h3>
+                <p></p>
+                <img src="" class="img2">
+                <button class="delete circle" city-id="">×</button>
+            </div>
+            <ul class="listed">
+                <li><span>Номер</span><input type="text"></li>
+                <li><span>Страна/Регион</span>
+                    <select size="1" name="region">
+                    <option disabled>Выберите город</option>
+                    <option value="Saint-Petersburg">Saint-Petersburg</option>
+                    <option selected value="Moscow">Moscow</option>
+                    <option value="Dubna">Dubna</option>
+                        <option value="i.Sahalin">i.Sahalin</option></select>
+                </li>
+                <li><span>Дата выдачи(мин длина 10)</span><input type="text" minlength="10" id="date"></li>
+                <li><span>Radio</span><input type="radio" id="radio"></li>
+                <li><span>Согласие на обработку</span><input type="checkbox" checked id="checked"></li>
+            </ul>
+        </li>
+        <li>
+            <div class="lihead">
+                <h3>Снилс</h3>
+                <p></p>
+                <img src="" class="img2">
+                <button class="delete circle" city-id="">×</button>
+            </div>
+            <ul class="listed">
+                <li><span>Номер(неизменяемое)</span><input type="text" value="Хаха" readonly id="readonly"></li>
+                <li><span>Девичья фамилия матери</span><input type="text" id="motherslastname"></li>
+                <li><span>Checkbox</span><input type="checkbox" id="checkbox"></li>
+                <li><span>Password</span><input type="password" id="password"></li>
+                <li><span>Required</span><input required type="text" id="required"></li>
+            </ul>
+        </li>
+    </ul>
+</main>
+</body>
+</html>
